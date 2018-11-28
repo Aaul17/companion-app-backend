@@ -11,7 +11,7 @@ class Api::V1::MedicationsController < ApplicationController
   end
 
   def create
-    @medication = Medication.create(medication_params)
+    @medication = Medication.create!(medication_params)
     render json: @medication, status: 201
   end
 
@@ -33,7 +33,7 @@ class Api::V1::MedicationsController < ApplicationController
   private
 
   def medication_params
-    params.require(:medication).permit(:name, :dose, :frequency, :doctor_id, :user_id)
+    params.require(:medication).permit(:name, :dose, :frequency, :user_id)
   end
 
   def find_medication

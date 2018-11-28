@@ -5,7 +5,6 @@ class CreateMedications < ActiveRecord::Migration[5.2]
       t.string :dose
       t.string :frequency
       t.integer :user_id
-      t.integer :doctor_id
 
       t.timestamps
     end

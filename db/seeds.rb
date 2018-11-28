@@ -43,23 +43,37 @@ end
 puts "notes created"
 
 puts "creating doctors"
-10.times do
-  Doctor.create!(name: "Test doctor", specialty: "Internal Medicine", phone: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address, last_seen: Date.new(rand(2015..2018), rand(1..12), rand(1..29)))
-end
+  Doctor.create!(name: "Test doctor 1", specialty: "Internal Medicine", phone: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address, last_seen: Date.new(rand(2015..2018), rand(1..12), rand(1..29)), user_id: 1)
+  Doctor.create!(name: "Test doctor 2", specialty: "Internal Medicine", phone: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address, last_seen: Date.new(rand(2015..2018), rand(1..12), rand(1..29)), user_id: 2)
+  Doctor.create!(name: "Test doctor 3", specialty: "Internal Medicine", phone: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address, last_seen: Date.new(rand(2015..2018), rand(1..12), rand(1..29)), user_id: 3)
+  Doctor.create!(name: "Test doctor 4", specialty: "Internal Medicine", phone: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address, last_seen: Date.new(rand(2015..2018), rand(1..12), rand(1..29)), user_id: 4)
+  Doctor.create!(name: "Test doctor 5", specialty: "Internal Medicine", phone: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address, last_seen: Date.new(rand(2015..2018), rand(1..12), rand(1..29)), user_id: 5)
+  Doctor.create!(name: "Test doctor 6", specialty: "Internal Medicine", phone: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address, last_seen: Date.new(rand(2015..2018), rand(1..12), rand(1..29)), user_id: 6)
+  Doctor.create!(name: "Test doctor 7", specialty: "Internal Medicine", phone: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address, last_seen: Date.new(rand(2015..2018), rand(1..12), rand(1..29)), user_id: 7)
+  Doctor.create!(name: "Test doctor 8", specialty: "Internal Medicine", phone: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address, last_seen: Date.new(rand(2015..2018), rand(1..12), rand(1..29)), user_id: 8)
+  Doctor.create!(name: "Test doctor 9", specialty: "Internal Medicine", phone: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address, last_seen: Date.new(rand(2015..2018), rand(1..12), rand(1..29)), user_id: 9)
+  Doctor.create!(name: "Test doctor 10", specialty: "Internal Medicine", phone: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address, last_seen: Date.new(rand(2015..2018), rand(1..12), rand(1..29)), user_id: 10)
 puts "doctors created"
 
 puts "creating appointments"
 h = 1
 10.times do
-  Appointment.create!(name: "general checkup", scheduled: Time.current, details: "had general checkup with doctor", user_id: h, doctor_id: h)
+  Appointment.create!(name: "general checkup", scheduled: Time.current, details: "had general checkup with doctor", user_id: h)
   h += 1
 end
 puts "appointments created"
 
 puts "creating medications"
-k = 1
-10.times do
-  Medication.create!(name: "test medication", dose: "25mg", frequency: "2 per day", user_id: k, doctor_id: k)
-  k += 1
-end
+Medication.create!(name: "test medication", dose: "25mg", frequency: "2 per day", user_id: 1)
+Medication.create!(name: "test medication", dose: "25mg", frequency: "2 per day", user_id: 2)
+Medication.create!(name: "test medication", dose: "25mg", frequency: "2 per day", user_id: 3)
+Medication.create!(name: "test medication", dose: "25mg", frequency: "2 per day", user_id: 3)
+Medication.create!(name: "test medication", dose: "25mg", frequency: "2 per day", user_id: 3)
+Medication.create!(name: "test medication", dose: "25mg", frequency: "2 per day", user_id: 4)
+Medication.create!(name: "test medication", dose: "25mg", frequency: "2 per day", user_id: 5)
+Medication.create!(name: "test medication", dose: "25mg", frequency: "2 per day", user_id: 6)
+Medication.create!(name: "test medication", dose: "25mg", frequency: "2 per day", user_id: 7)
+Medication.create!(name: "test medication", dose: "25mg", frequency: "2 per day", user_id: 8)
+Medication.create!(name: "test medication", dose: "25mg", frequency: "2 per day", user_id: 9)
+Medication.create!(name: "test medication", dose: "25mg", frequency: "2 per day", user_id: 10)
 puts "medications created"

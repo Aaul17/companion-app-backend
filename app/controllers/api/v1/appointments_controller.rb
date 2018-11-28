@@ -33,7 +33,7 @@ class Api::V1::AppointmentsController < ApplicationController
   private
 
   def appointment_params
-    params.require(:appointment).permit(:name, :dose, :frequency, :doctor_id, :user_id)
+    params.require(:appointment).permit(:name, :dose, :frequency, :user_id)
   end
 
   def find_appointment

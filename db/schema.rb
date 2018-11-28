@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(version: 2018_11_20_203029) do
     t.datetime "scheduled"
     t.text "details"
     t.integer "user_id"
-    t.integer "doctor_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -31,6 +30,7 @@ ActiveRecord::Schema.define(version: 2018_11_20_203029) do
     t.string "phone"
     t.string "address"
     t.date "last_seen"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -40,7 +40,6 @@ ActiveRecord::Schema.define(version: 2018_11_20_203029) do
     t.string "dose"
     t.string "frequency"
     t.integer "user_id"
-    t.integer "doctor_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
