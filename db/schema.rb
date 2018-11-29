@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2018_11_20_203029) do
 
   create_table "appointments", force: :cascade do |t|
     t.string "name"
-    t.datetime "scheduled"
+    t.string "scheduled"
     t.text "details"
     t.integer "user_id"
     t.datetime "created_at", null: false

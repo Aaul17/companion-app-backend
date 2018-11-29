@@ -2,7 +2,7 @@ class CreateAppointments < ActiveRecord::Migration[5.2]
   def change
     create_table :appointments do |t|
       t.string :name
-      t.datetime :scheduled
+      t.string :scheduled
       t.text :details
       t.integer :user_id
 

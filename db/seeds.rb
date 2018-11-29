@@ -58,7 +58,7 @@ puts "doctors created"
 puts "creating appointments"
 h = 1
 10.times do
-  Appointment.create!(name: "general checkup", scheduled: Time.current, details: "had general checkup with doctor", user_id: h)
+  Appointment.create!(name: "general checkup", scheduled: "2017-05-24T10:30", details: "had general checkup with doctor", user_id: h)
   h += 1
 end
 puts "appointments created"
