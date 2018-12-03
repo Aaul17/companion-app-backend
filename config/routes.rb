@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       resources :doctors
       resources :medications
       resources :appointments
+      resources :pains
     end
   end
 end

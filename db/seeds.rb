@@ -77,3 +77,20 @@ Medication.create!(name: "test medication", dose: "25mg", frequency: "2 per day"
 Medication.create!(name: "test medication", dose: "25mg", frequency: "2 per day", user_id: 9)
 Medication.create!(name: "test medication", dose: "25mg", frequency: "2 per day", user_id: 10)
 puts "medications created"
+
+puts "creating pains"
+Pain.create!(date: Date.new(2018, 11, 28), level: 0, user_id: 1)
+Pain.create!(date: Date.new(2018, 11, 29), level: 5, user_id: 1)
+Pain.create!(date: Date.new(2018, 11, 25), level: 1, user_id: 2)
+Pain.create!(date: Date.new(2018, 11, 22), level: 8, user_id: 3)
+Pain.create!(date: Date.new(2018, 11, 23), level: 7, user_id: 4)
+Pain.create!(date: Date.new(2018, 11, 24), level: 4, user_id: 4)
+Pain.create!(date: Date.new(2018, 11, 26), level: 2, user_id: 5)
+Pain.create!(date: Date.new(2018, 11, 20), level: 3, user_id: 6)
+Pain.create!(date: Date.new(2018, 11, 18), level: 7, user_id: 7)
+Pain.create!(date: Date.new(2018, 11, 20), level: 9, user_id: 8)
+Pain.create!(date: Date.new(2018, 11, 21), level: 4, user_id: 8)
+Pain.create!(date: Date.new(2018, 11, 22), level: 5, user_id: 8)
+Pain.create!(date: Date.new(2018, 11, 30), level: 6, user_id: 9)
+Pain.create!(date: Date.new(2018, 11, 29), level: 2, user_id: 10)
+puts "pains created"

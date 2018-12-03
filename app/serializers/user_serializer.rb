@@ -4,4 +4,5 @@ class UserSerializer < ActiveModel::Serializer
   has_many :medications
   has_many :appointments
   has_many :doctors
+  has_many :pains
 end
